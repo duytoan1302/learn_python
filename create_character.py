@@ -9,5 +9,5 @@ print("Strengths are:", strengths)
 print("Weaknesses are:", weaknesses)
 
 # dong nay giong nhu dong tiep theo
-#print(name, " says \"thank you for making me!\"")
-print(name, 'says "thank you for making me!"')
+print(name, " says \"thank you for making me!\"")
+#print(name, 'says "thank you for making me!"')
