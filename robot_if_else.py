@@ -1,7 +1,7 @@
 user_reply = input("Do you like robot? (please fill in yes or no or maybe or just like the eyes lazer)")
 if user_reply == "yes":
        print("bip bip")
-elif user_reply "maybe":
+elif user_reply == "maybe":
        print("dicisively dress people")
 elif user_reply == "just like the eyes lazer":
        print("reeet")
