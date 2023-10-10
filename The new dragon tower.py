@@ -37,7 +37,7 @@ while exitChoice!="exit":
             print("sphinx get you out.")
             print("You win the game.The game is over.")
         else:
-            print("sphinx says your guess í false.")
+            print("sphinx says your guess is false.")
             print("you is the prisoner always.")
             print("you lots the game.The game is over.")
             
