@@ -1,27 +1,35 @@
 from turtle import *
-import time
+import random
 shape("turtle")
 speed(10)
-pencolor("white")
+colours = ["white","cyan","yellow","orange","purple","pink","red","green"]
 pensize(6)
 Screen().bgcolor("turquoise")
-def vshape():
+def vshape(size):
     right(25)
-    forward(50)
-    backward(50)
+    forward(size)
+    backward(size)
     left(50)
-    forward(50)
-    backward(50)
+    forward(size)
+    backward(size)
     right(25)
 
-def snowflakeArm():
+def snowflakeArm(size):
     for x in range (0,4):
-        forward(30)
-        vshape()
-    backward(120)
+        forward(size)
+        vshape(size)
+    backward(size*4)
 
-def snowflake():
-    for x in range(0,6):
-        snowflakeArm()
-        right(60)
-snowflake()
+def snowflake(size):
+    for x in range(0,18):
+        color(random.choice(colours))
+        snowflakeArm(size)
+        right(20)
+for i in range(0,10):
+    size = random.randint(5,30)
+    x = random.randint(-200,200)
+    y = random.randint(-200,200)
+    penup()
+    goto(x,y)
+    pendown()
+    snowflake(size)
