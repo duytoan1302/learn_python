@@ -36,10 +36,11 @@ for x in range(0,4):
     forward(b)
     right(90)
     import time
-shape("turtle")
-speed(200)
+
 colours = ["white","cyan","yellow","orange","purple","pink","red","green"]
 pensize(6)
+shape("turtle")
+speed(200)
 Screen().bgcolor("turquoise")
 def vshape(size):
     right(25)
