@@ -1,0 +1,37 @@
+from turtle import *
+
+
+def square(a):
+    for x in range(0,4):
+        forward(a)
+        right(90)
+
+size=20
+x=size
+count=8
+penup()
+x0=-(size*count/2 + count/2-1)
+y0=size/2
+for x in (0,count):
+    x=x+10
+    goto(x0,y0)
+for i in range(0,count):
+    pendown()
+    square(size)
+
+    penup()
+    forward(size+1)
+    size=size+10
+
+speed(10)
+color("red")
+shape("turtle")
+pensize(4)
+
+# for x in range(0,8):
+#     pendown()
+#     for x in range(0,4):
+#         forward(20)
+#         right(90)
+#     penup()
+#     forward(25)
